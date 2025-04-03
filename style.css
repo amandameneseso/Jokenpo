@@ -116,11 +116,11 @@ body {
    
 /* Footer Styles */
 footer {
-    bottom: 25px;
+    bottom: 40px;
     text-align: center;
     color: #9e695c;
     font-weight: 700;
     margin-top: auto;
-    padding: 10px 0; /* Adicione um pouco de padding para espaçamento */
+    padding: 20px 0; /* Adicione um pouco de padding para espaçamento */
     box-sizing: border-box; /* Garante que a padding não aumente a altura total */
 }
