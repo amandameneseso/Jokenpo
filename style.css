@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ffe1da;
+    position: relative;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #e7bcdb, #ddc1e0, #fad0c4, #ff9a9e);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+   
+/* Container with the background image */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Permite que o container cresça e empurre o footer para baixo */
+    width: 100%; /* Garante que o container ocupe a largura total */
+}
+   
+/* Content div for text and button */
+.content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+   
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffe1da;
+}
+   
+.info {
+    max-width: 40px;
+    width: auto;
+    position:fixed;
+    top:20px;
+    right:0px;
+    padding:10px 20px;
+    background:#ffecec;
+    border:none;
+    cursor:pointer;
+    border-radius:8px 0 0 8px;
+}
+   
+/* Button Styles */
+.btnJogar {
+    background-color: #e02d5acc;
+    border: none;
+    border-radius:8px;
+    margin: 4px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Nunito Sans', sans-serif;
+}
+   
+.btnJogar:hover {
+    transition: 1s;
+    background-color: rgb(230, 122, 149);
+}
+
+.iconJogo{
+    max-width: 40px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffe1da;
+}
+
+.scoreboard {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 15px 40px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.scoreboard h2 {
+    margin-top: 0;
+    color: #ffe1da;
+    font-size: 20px;
+}
+
+.scoreboard p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#pontuacao-jogador, #pontuacao-computador {
+    font-weight: bold;
+    color: #ffe1da;
+}
+   
+/* Footer Styles */
+footer {
+    bottom: 25px;
+    text-align: center;
+    color: #9e695c;
+    font-weight: 700;
+    margin-top: auto;
+    padding: 10px 0; /* Adicione um pouco de padding para espaçamento */
+    box-sizing: border-box; /* Garante que a padding não aumente a altura total */
+}

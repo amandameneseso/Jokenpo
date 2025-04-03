@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="modal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+        <div class="modal-content" style="background:#444; padding:20px; border-radius:10px; width:80%; max-width:400px; margin:100px auto; text-align:center; color:white;">
+            <h2>Como Jogar</h2>
+            <p>Escolha entre pedra, papel, tesoura, corda, água ou fogo clicando nos botões.</p>
+            <p>O jogo segue as seguintes regras:</p>
+            <ul style="text-align:left; display:inline-block;">
+                <li>Corda:</li>
+                <ul>
+                    <li>Ganha de: Pedra, Papel</li>
+                    <li>Perde para: Tesoura, Fogo</li>
+                </ul>
+                <li>Tesoura:</li>
+                <ul>
+                    <li>Ganha de: Papel, Água</li>
+                    <li>Perde para: Pedra, Fogo</li>
+                </ul>
+                <li>Água:</li>
+                <ul>
+                    <li>Ganha de: Fogo, Pedra</li>
+                    <li>Perde para: Tesoura, Papel</li>
+                </ul>
+                <li>Fogo:</li>
+                <ul>
+                    <li>Ganha de: Papel, Tesoura</li>
+                    <li>Perde para: Água, Pedra</li>
+                </ul>
+                <li>Papel:</li>
+                <ul>
+                    <li>Ganha de: Pedra, Água</li>
+                    <li>Perde para: Tesoura, Corda</li>
+                </ul>
+                <li>Pedra:</li>
+                <ul>
+                    <li>Ganha de: Tesoura, Fogo</li>
+                    <li>Perde para: Corda, Papel</li>
+                </ul>
+                <li>Símbolos iguais resultam em empate.</li>
+                <li>Cada jogador ganha 1 ponto.</li>
+            </ul>
+            <p>O placar será atualizado automaticamente.</p>
+            <button onclick="fecharModal()" style="padding:10px 20px; background:#61dafb; border:none; cursor:pointer; border-radius:5px;">Fechar</button>
+        </div>
+    </div>
+    
+    <img onclick="abrirModal()" src="https://img.icons8.com/ios7/600/info.png" class="info"/>
+    
+    <div class="container">
+
+        <div class="content">
+        
+        <h1>Super Jokenpô</h1>
+
+        <h2>Ganhe da Lisa Simpson!</h2>
+
+        <div>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/lisa-simpson-the-simpsons-series-31-1649411456.jpg?crop=0.522xw:0.928xh;0.258xw,0.0278xh&resize=980:*" alt="" style="width: 170px">
+        </div>
+
+        <p>Escolha uma opção:</p>
+
+        <button class="btnJogar" id="pedra"><img src="https://cdn4.iconfinder.com/data/icons/small-v22/512/closed_fist_hand_holding_punch-1024.png" class="iconJogo"/></br>Pedra</button>
+
+        <button class="btnJogar" id="papel"><img src="https://cdn2.iconfinder.com/data/icons/hand-gestures-thin-line-signs/180/2-1024.png" class="iconJogo"/></br>Papel</button>
+
+        <button class="btnJogar" id="tesoura"><img src="https://cdn1.iconfinder.com/data/icons/paper-rock-scissors/100/3-1024.png" class="iconJogo"></br>Tesoura</button>
+
+        <button class="btnJogar" id="corda"><img src="https://cdn0.iconfinder.com/data/icons/camping-outline-14/64/20-rope-cord-loop-camping-512.png" class="iconJogo"></br>Corda</button>
+
+        <button class="btnJogar" id="agua"> <img src="https://cdn1.iconfinder.com/data/icons/ionicons-outline-vol-2/512/water-outline-512.png" class="iconJogo"/></br>Água</button>
+
+        <button class="btnJogar" id="fogo"> <img src="https://cdn1.iconfinder.com/data/icons/shopping-346/24/deal-flame-fire-hot-512.png" class="iconJogo"/></br>Fogo</button>
+
+        <div class="result">
+            <p id="mensagem"></p>
+        </div>
+
+        <div class="scoreboard">
+            <h2>Placar</h2>
+            <p>Você: <span id="pontuacao-jogador">0</span></p>
+            <p>Lisa: <span id="pontuacao-computador">0</span></p>
+        </div>
+
+        </div>
+
+    </div>
+
+    <footer>Made with &lt;3 by Amanda</footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
